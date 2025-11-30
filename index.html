@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marshmallow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <header>
+    <div class="header-box">
+      <h1>Welcome to Marshmallow's World</h1>
+      <p>Hello my love, this website is just for me and you.</p>
+    </div>
+
+    <!-- Heart button -->
+    <button id="memories-btn" title="Access Our Memories" onclick="showMemories()">
+      ♥
+    </button>
+  </header>
+
+  <main>
+    <section id="messages-section">
+      <h2>Messages</h2>
+
+      <!-- fixed message container -->
+      <div id="message-container" aria-live="polite"></div>
+
+      <!-- inputs: one input below (we use a selector for sender) -->
+      <div id="input-section">
+        <select id="sender-select" title="Choose sender">
+          <option value="Mahlatse">Mahlatse</option>
+          <option value="Ntebaleng">Ntebaleng</option>
+        </select>
+        <input id="message-input" placeholder="Type a message..." />
+        <button id="send-button">Send</button>
+      </div>
+    </section>
+
+    <section id="memories-section" class="hidden">
+      <h2>Our Memories</h2>
+      <div id="memories-container"></div>
+    </section>
+  </main>
+
+  <!-- Firebase + app logic as ES module -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+    
